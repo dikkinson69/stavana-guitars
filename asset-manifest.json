@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stavana-guitars/static/css/main.099d7429.css",
-    "main.js": "/stavana-guitars/static/js/main.5ad7947d.js",
+    "main.js": "/stavana-guitars/static/js/main.f4968e35.js",
     "static/media/tt1018m__8162f819-e6ad-4691-bcae-ad63b764767d.ttf": "/stavana-guitars/static/media/tt1018m__8162f819-e6ad-4691-bcae-ad63b764767d.902e33b4a93fab853189.ttf",
     "index.html": "/stavana-guitars/index.html",
     "main.099d7429.css.map": "/stavana-guitars/static/css/main.099d7429.css.map",
-    "main.5ad7947d.js.map": "/stavana-guitars/static/js/main.5ad7947d.js.map"
+    "main.f4968e35.js.map": "/stavana-guitars/static/js/main.f4968e35.js.map"
   },
   "entrypoints": [
     "static/css/main.099d7429.css",
-    "static/js/main.5ad7947d.js"
+    "static/js/main.f4968e35.js"
   ]
 }
