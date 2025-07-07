@@ -19,7 +19,7 @@ function Item({ itemObj, onSelect }) {
       <img
         src={itemObj.photoName}
         alt={itemObj.name}
-        style={{ cursor: "pointer" }} // Add cursor pointer
+        style={{ cursor: "pointer" }}
       />
       <div>
         <h3>{itemObj.name}</h3>

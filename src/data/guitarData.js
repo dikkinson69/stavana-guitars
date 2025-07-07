@@ -55,6 +55,20 @@ const guitarData = [
       process.env.PUBLIC_URL + "/StavanaNo4/headside.jpg",
     ],
   },
+  {
+    name: "Stavana No5",
+    description: "Stavana handpainted guitar",
+    photoName: process.env.PUBLIC_URL + "/StavanaNo5/main.jpg",
+    soldOut: false,
+    images: [
+      process.env.PUBLIC_URL + "/StavanaNo5/main.jpg",
+      process.env.PUBLIC_URL + "/StavanaNo5/side.jpg",
+      process.env.PUBLIC_URL + "/StavanaNo5/head.jpg",
+      process.env.PUBLIC_URL + "/StavanaNo5/mark.jpg",
+      process.env.PUBLIC_URL + "/StavanaNo5/upclose.jpg",
+      process.env.PUBLIC_URL + "/StavanaNo5/headside.jpg",
+    ],
+  },
 ];
 
 export default guitarData;
