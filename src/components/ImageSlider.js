@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function ImageSlider({ guitar, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,6 +13,25 @@ function ImageSlider({ guitar, onClose }) {
       prev === guitar.images.length - 1 ? 0 : prev + 1
     );
 
+  // ✅ Add keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "ArrowLeft") {
+        prevSlide();
+      } else if (e.key === "ArrowRight") {
+        nextSlide();
+      } else if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [guitar.images.length, onClose]);
+
   return (
     <div className="modal">
       <button className="close-btn" onClick={onClose}>
@@ -25,7 +44,6 @@ function ImageSlider({ guitar, onClose }) {
         src={guitar.images[currentIndex]}
         alt={guitar.name}
         className="slider-image"
-        //style={{ cursor: "pointer" }}
       />
       <button className="next-btn" onClick={nextSlide}>
         {">"}
